@@ -8,7 +8,9 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <footer> </footer>
+    <footer> 
+        ouicxgcvbhjokpjhlgkvcxgchvjbk
+    </footer>
     
 </body>
 </html>
