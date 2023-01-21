@@ -1,16 +1,17 @@
-let button = document.getElementById('button')
-button.addEventListener("click",
-function(){
-    let p = document.createElement('p');
-    let body = document.querySelector('body')
+$(document).ready(function(){
+	$("#button").click(function(){
 
-    fetch('expression.txt')
-    .then (function(response){
-        return response.text()
-    })
+       $.ajax({
+         type: "GET",
+         url: "expression.txt",
+         
+         success:function(data){
+                  $("#test").remove();
+                  $("#bod").append('<p id="test"></p>');
+                  $("#test").text(data);
+                  
+                  }
+         });
 
-    .then (function(data){
-        body.append(p);
-        p.append(data)
-    })
-})
+  });
+});
