@@ -18,7 +18,7 @@
             <img class="img" id="05" src="">
             <img class="img" id="06" src=""> -->
         </div>
-        <button id="shuffle">shuffe it</button>
+        <button id="shuffle">melanges</button>
         <div id="ordered"></div>
     </main>
     <footer></footer>
