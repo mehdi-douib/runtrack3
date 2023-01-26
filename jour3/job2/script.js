@@ -48,12 +48,12 @@ function checkVictory() {
     if (imgNodeList.length == 6) {
         var counter = 1;
         imgNodeList.forEach(element => {
-            if (element.id.replace('arc', '') == counter) {
+            if (element.id.replace('img', '') == counter) {
                 counter++
             }
         });
         if (counter == 7) {
-            $('<h1 id="results">Vous gagner houe</h1>').appendTo("body");
+            $('<h1 id="results">Vous gagner </h1>').appendTo("body");
         } else {
             $('<h1 id="results">Devinez qui vient de perdre?</h1>').appendTo("body");
         }
