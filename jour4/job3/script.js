@@ -1,15 +1,3 @@
-// async function getPokemonData(){
-//     var pokeDeck = []
-
-//     var response = await fetch('pokemon.json')
-//     var poke = await response.json()
-
-//     pokeDeck.push(poke)
-//     console.log(pokeDeck)
-// }
-
-// getPokemonData()
-
 document.addEventListener('DOMContentLoaded', (event) => {
 
     let btn = document.getElementById('filter')
@@ -23,7 +11,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
     select.append(NewOpt1)
     let typeList = []
 
-
+        
     fetch('pokemon.json')
         .then((response) => response.json())
         .then((response) => {
